@@ -1,0 +1,23 @@
+body {
+    padding: 6%;
+}
+
+#umbrellaBox {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 3%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 25px;
+}
+
+#leftDiv {
+    width: 60%;
+}
+
+
+
+#leftDiv img {
+    width: 60%;
+}
