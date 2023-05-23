@@ -35,12 +35,24 @@ for (let i = 0; i < buttonColor.length; i++) {
 
 const logoInput = document.getElementById("logoInput");
 const displayLogo = document.getElementById("displayLogo");
-const uploadBtn = document.getElementById("uploadLogo");
+const logoLabel = document.getElementById("logoLabel");
+// const uploadBtn = document.getElementById("uploadLogo");
 
 
 logoInput.onchange = () => {
-    displayLogo.src = URL.createObjectURL(logoInput.files[0])
+    const uploadFile = logoInput.files[0];
+    const maxSize = 5 * 1024 * 1024;
+
+    if (uploadFile && uploadFile.size <= maxSize) {
+        displayLogo.src = URL.createObjectURL(uploadFile)
+        logoLabel.textContent = `${uploadFile.name}`
+    } else {
+        alert(`File size shouldn't be more than 5MB`);
+        displayLogo.src = "Assets/Images/defaultLogo.png";
+        logoLabel.textContent = `UPLOAD LOGO`
+    }
 }
+
 // const uploadedImg = ""
 
 // uploadBtn.addEventListener("click", () => {

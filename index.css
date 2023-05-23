@@ -25,6 +25,8 @@ body {
 #leftDiv #displayLogo {
     position: absolute;
     width: 50px;
+    max-width: 100px;
+    max-height: 40px;
     bottom: 200px;
     left: 390px;
 }
