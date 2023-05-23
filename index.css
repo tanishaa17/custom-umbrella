@@ -16,6 +16,8 @@ body {
 
 #leftDiv {
     width: 60%;
+    position: relative;
+    display: inline-block;
 }
 
 #leftDiv img {
@@ -23,18 +25,23 @@ body {
 }
 
 #leftDiv #displayLogo {
-    position: absolute;
     width: 50px;
     max-width: 100px;
     max-height: 40px;
-    bottom: 200px;
-    left: 390px;
+    position: absolute;
+    top: 90%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+}
+
+#righttDiv {
+    margin-bottom: 10%;
 }
 
 #colorDiv>p {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .buttonColor {
@@ -43,7 +50,7 @@ body {
     height: 25px;
     border-radius: 50%;
     margin-right: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 #blue {
@@ -75,8 +82,8 @@ body {
 }
 
 #uploadLogo {
-    margin-top: 20px;
     width: 90%;
+    margin-top: 20px;
     display: flex;
     background-color: #1db3ea;
     color: white;
@@ -100,4 +107,95 @@ body {
 
 input {
     display: none;
+}
+
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 480px) {
+    #umbrellaBox {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    #leftDiv {
+        width: 100%;
+    }
+
+    #leftDiv #displayLogo {
+        top: 88%;
+        left: 50%;
+        width: 40px;
+        max-height: 20px;
+        transform: translate(-50%, -50%);
+    }
+
+    #colorDiv>p {
+        font-size: 30px;
+    }
+
+    .buttonColor {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 15px;
+    }
+
+    #uploadLogo {
+        margin: auto;
+        margin-top: 20px;
+
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+
+    #umbrellaBox {
+        width: 100%;
+        padding: 2%;
+        margin-top: 10%;
+    }
+
+    #leftDiv img {
+        width: 80%;
+    }
+
+    #leftDiv #displayLogo {
+        top: 90%;
+        left: 40%;
+        max-height: 25px;
+    }
+
+    #colorDiv>p {
+        font-size: 25px;
+    }
+    .buttonColor {
+       
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    #umbrellaBox {
+        width: 85%;
+    }
+
+    #leftDiv {
+        width: 55%;
+    }
+
+    #leftDiv img {
+        width: 85%;
+    }
+
+    #leftDiv #displayLogo {
+        top: 90%;
+        left: 42%;
+        max-height: 30px;
+    }
+
+    #colorDiv>p {
+        font-size: 30px;
+    }
 }
