@@ -116,7 +116,10 @@ input {
     #umbrellaBox {
         display: block;
         text-align: center;
-        width: 100%;
+        width: auto;
+        height: 85vh;
+        margin-top: 5%;
+        padding: 5%;
     }
 
     #leftDiv {
@@ -152,13 +155,17 @@ input {
 @media only screen and (max-width: 768px) and (min-width: 481px) {
 
     #umbrellaBox {
-        width: 100%;
-        padding: 2%;
-        margin-top: 10%;
+        width: auto;
+        height: 75vh;
+    }
+
+    #leftDiv {
+        width: 55%;
     }
 
     #leftDiv img {
         width: 80%;
+
     }
 
     #leftDiv #displayLogo {
@@ -170,8 +177,9 @@ input {
     #colorDiv>p {
         font-size: 25px;
     }
+
     .buttonColor {
-       
+
         margin-bottom: 20px;
     }
 }
@@ -179,6 +187,7 @@ input {
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
     #umbrellaBox {
         width: 85%;
+        margin-top: 10%;
     }
 
     #leftDiv {
