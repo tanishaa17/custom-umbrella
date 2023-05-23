@@ -33,7 +33,14 @@ for (let i = 0; i < buttonColor.length; i++) {
 
 // TO UPLOAD LOGO
 
-// const uploadBtn = document.getElementById("uploadLogo");
+const logoInput = document.getElementById("logoInput");
+const displayLogo = document.getElementById("displayLogo");
+const uploadBtn = document.getElementById("uploadLogo");
+
+
+logoInput.onchange = () => {
+    displayLogo.src = URL.createObjectURL(logoInput.files[0])
+}
 // const uploadedImg = ""
 
 // uploadBtn.addEventListener("click", () => {

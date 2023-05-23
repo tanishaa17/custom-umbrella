@@ -22,7 +22,7 @@ body {
     width: 65%;
 }
 
-#leftDiv #logo {
+#leftDiv #displayLogo {
     position: absolute;
     width: 50px;
     bottom: 200px;
@@ -41,7 +41,6 @@ body {
     height: 25px;
     border-radius: 50%;
     margin-right: 10px;
-
     margin-bottom: 25px;
 }
 
@@ -92,6 +91,11 @@ body {
     margin-left: 10px;
 }
 
-#uploadLogo>span {
+#uploadLogo>label {
     margin: auto;
+    cursor: pointer;
+}
+
+input {
+    display: none;
 }
