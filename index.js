@@ -30,3 +30,17 @@ for (let i = 0; i < buttonColor.length; i++) {
         changeColor(color)
     })
 }
+
+// TO UPLOAD LOGO
+
+// const uploadBtn = document.getElementById("uploadLogo");
+// const uploadedImg = ""
+
+// uploadBtn.addEventListener("click", () => {
+//     const reader = new FileReader();
+//     reader.addEventListener("load", () => {
+//         uploadedImg = reader.result;
+//         document.getElementById("logo").style.backgroundImage = url(${ uploadedImg })
+//     })
+//     reader.readAsDataURL(this.files[0])
+// })
